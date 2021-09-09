@@ -1,0 +1,175 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+#image {
+    background-image:url(dino.png);
+    height: 850px;
+    max-width: 100%;
+    position:relative;
+    color: white;
+    z-index:1;
+    background-position: center;
+  }
+ 
+  #image::after {
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.6);
+    z-index:-1;
+  }
+  
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#logo{
+    width: 120px;
+    height: 120px;
+    cursor: pointer;
+    border-radius:  30px;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color:white;
+    text-transform: uppercase;
+}
+.navbar ul li a::after{
+    content: "";
+    height: 3px;
+    width: 0;
+    background:#009688;
+    position: absolute;
+    left: 0;
+    bottom:-10px;
+    transition: 0.5s;
+}
+.navbar ul li a:hover::after{
+    width: 100%;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+.content h1{
+    font-size: 60px;
+    margin-top: 80px;
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+}
+.button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    cursor:pointer;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+.buttonmini{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 0px 0px 45px 45px; 
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid white;
+    background: #009688;
+    cursor:pointer;
+    color: white;
+    
+}
+span{
+    background: #009688;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.6s;
+}
+.button:hover span{
+    width: 100%;
+}
+button:hover {
+    border: none;
+}
+
+#line{
+    background-color: #009688;
+    height: 100px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+#juegos {
+    background-image:url(Green-Tropical-Plant-Wallpaper-Mural-Plain.jpg);
+    height: auto;
+    max-width: 100%;
+    position:relative;
+    color: rgba(218, 214, 214, 0.774);
+}
+#juegos ::after{
+}
+h2{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: rgba(224, 222, 222, 0.74);
+    letter-spacing: 4px;
+    font-size: 40px;
+    
+}
+ #first{
+    color: red;
+    width: 35px;
+    height: 35px;
+    justify-content: space-between;
+}  
+.juego1{
+    cursor: pointer;
+    padding: 40px;
+}
+.x{width:300px;object-fit:cover; border-radius: 40px;box-shadow:  1px 0px hsl(33,42%,40%),
+    2px 2px 0px hsl(33,42%,39%),
+3px 3px 0px hsl(33,42%,38%),
+4px 4px 0px hsl(33,42%,37%),
+5px 5px 0px hsl(33,42%,36%)}
+.h{width:300px}
+.d{width: '300px';text-align:justify ;padding: 10px;padding-top: 20px;
+}
+.w{width: 300px;}
+.s{
+    width: 100px;
+}

@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#map{
+    height: 600px;
+    width: 100%;
+}
+#goback{
+    border: 0;
+    padding: 10px 30px;
+    background: #86b086;
+    color:white;
+    margin: 10px;
+    border-radius: 10%;
+}
+/* cuando pase arriba el mouse */
+#goback:hover{
+    background-color: #718a8e;
+    cursor: pointer;
+}
